@@ -6,13 +6,13 @@ This repository contains information about the 2018 instance of the
 
 * Meeting dates
 
-| Session | Date                             | Remarks                | Room |
-|---------+----------------------------------+------------------------+------|
-|       1 | Feb 1, 12:00 - 16:00 (Thursday)  |                        | TBD  |
-|       2 | Feb 15, 12:00 - 16:00 (Thursday) | 2 weeks later          | TBD  |
-|       3 | Mar 1, 12:00 - 16:00 (Thursday)  | 2 weeks later          | TBD  |
-|       4 | Mar 15, 12:00 - 16:00 (Thursday) | 2 weeks later          | TBD  |
-|       5 | Apr 5, 12:00 - 16:00 (Thursday)  | 3 weeks later (Easter) | TBD  |
-|       6 | Apr 19, 12:00 - 16:00 (Thursday) | 2 weeks later          | TBD  |
-|       7 | May 3, 12:00 - 16:00 (Thursday)  | 2 weeks later          | TBD  |
+| Session | Date                             | Remarks                | Room                           |
+|---------+----------------------------------+------------------------+--------------------------------|
+|       1 | Feb 1, 12:00 - 16:00 (Thursday)  |                        | 5342-333 (Ada meeting room)    |
+|       2 | Feb 15, 12:00 - 16:00 (Thursday) | 2 weeks later          | 5342-333 (Ada meeting room)    |
+|       3 | Mar 1, 12:00 - 16:00 (Thursday)  | 2 weeks later          | 5342-333 (Ada meeting room)    |
+|       4 | Mar 15, 12:00 - 16:00 (Thursday) | 2 weeks later          | 5125-110 (Edison meeting room) |
+|       5 | Apr 5, 12:00 - 16:00 (Thursday)  | 3 weeks later (Easter) | 5125-110 (Edison meeting room) |
+|       6 | Apr 19, 12:00 - 16:00 (Thursday) | 2 weeks later          | 5342-333 (Ada meeting room)    |
+|       7 | May 3, 12:00 - 16:00 (Thursday)  | 2 weeks later          | 5342-333 (Ada meeting room)    |
 
