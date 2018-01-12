@@ -8,11 +8,11 @@ This repository contains information about the 2018 instance of the
 
 | Session | Date                  | Remark                 | Room |
 |---------+-----------------------+------------------------+------|
-|       1 | Feb 1, 12:00 - 16:00  |                        |      |
-|       2 | Feb 15, 12:00 - 16:00 |                        |      |
-|       3 | Mar 1, 12:00 - 16:00  |                        |      |
-|       4 | Mar 15, 12:00 - 16:00 |                        |      |
-|       5 | Apr 5, 12:00 - 16:00  | 3 weeks later (Easter) |      |
-|       6 | Apr 19, 12:00 - 16:00 |                        |      |
-|       7 | May 3, 12:00 - 16:00  |                        |      |
+|       1 | Feb 1, 12:00 - 16:00  |                        | TBD  |
+|       2 | Feb 15, 12:00 - 16:00 |                        | TBD  |
+|       3 | Mar 1, 12:00 - 16:00  |                        | TBD  |
+|       4 | Mar 15, 12:00 - 16:00 |                        | TBD  |
+|       5 | Apr 5, 12:00 - 16:00  | 3 weeks later (Easter) | TBD  |
+|       6 | Apr 19, 12:00 - 16:00 |                        | TBD  |
+|       7 | May 3, 12:00 - 16:00  |                        | TBD  |
 
