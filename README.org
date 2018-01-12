@@ -1,0 +1,18 @@
+
+* About
+
+This repository contains information about the 2018 instance of the
+[[http://phd.au.dk/gradschools/scienceandtechnology/courses/scientific-courses/kurser-2018/engineering/machine-learning-spring-2018/][Aarhus University Machine Learning PhD course]].
+
+* Meeting dates
+
+| Session | Date                  | Remark                 | Room |
+|---------+-----------------------+------------------------+------|
+|       1 | Feb 1, 12:00 - 16:00  |                        |      |
+|       2 | Feb 15, 12:00 - 16:00 |                        |      |
+|       3 | Mar 1, 12:00 - 16:00  |                        |      |
+|       4 | Mar 15, 12:00 - 16:00 |                        |      |
+|       5 | Apr 5, 12:00 - 16:00  | 3 weeks later (Easter) |      |
+|       6 | Apr 19, 12:00 - 16:00 |                        |      |
+|       7 | May 3, 12:00 - 16:00  |                        |      |
+
