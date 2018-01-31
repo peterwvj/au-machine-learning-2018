@@ -17,3 +17,6 @@ This repository contains information about the 2018 instance of the
 |       6 | Apr 19, 12:00 - 16:00 (Thursday) | 2 weeks later          | 5342-333 (Ada meeting room)    |
 |       7 | May 3, 12:00 - 16:00 (Thursday)  | 2 weeks later          | 5342-333 (Ada meeting room)    |
 
+* Compulsory programme
+
+The compulsory programme is available [[compulsory-programme.pdf][HERE]].
