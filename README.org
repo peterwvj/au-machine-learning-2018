@@ -2,7 +2,7 @@
 
 * About
 
-This repository contains information about the 2018 instance of the Aarhus University Machine Learning workshop.
+This repository contains information about the 2018 instance of the Aarhus University Machine Learning workshop. The workshop follows an online [[https://www.coursera.org/learn/machine-learning][Machine Learning]] course, offered by Coursera.
 
 * Meeting dates
 
