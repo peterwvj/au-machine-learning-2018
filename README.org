@@ -2,8 +2,7 @@
 
 * About
 
-This repository contains information about the 2018 instance of the
-[[http://phd.au.dk/gradschools/scienceandtechnology/courses/scientific-courses/kurser-2018/engineering/machine-learning-spring-2018/][Aarhus University Machine Learning workshop]].
+This repository contains information about the 2018 instance of the Aarhus University Machine Learning workshop.
 
 * Meeting dates
 
