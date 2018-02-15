@@ -1,0 +1,121 @@
+\documentclass[a4paper]{report}
+\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{color}
+\begin{document}
+\chapter{Session 1}
+\section{Matrix notes}
+\label{sec:matrix_notes}
+\begin{description}
+  \item[Multiplying Matrices:]
+  Number of columns in the first matrix must equal the number of rows in the second matrix \\
+$$ n\times m\ *\ m\times z\ =\ n\times z $$
+  \[
+\begin{bmatrix}
+    1       & 2 \\
+    3       & 4
+\end{bmatrix}
+\times
+\begin{bmatrix}
+    a       & b \\
+    c       & d
+\end{bmatrix}
+  =
+\begin{bmatrix}
+    1*a+2*c       & 1*b+2*d \\
+    3*a+4*c       & 3*b+4*d
+\end{bmatrix}
+\]
+\end{description}
+\chapter{test}
+\section{Linear Regression with One Variable/Univariate Linear Regression}
+\label{sec:linear_regression_one_variable}
+\href{https://www.coursera.org/learn/machine-learning/lecture/db3jS/model-representation}{Link: Model Representation}
+$$h_\theta(x)=\theta_0+\theta_1x$$
+To break it apart, it is $\frac{1}{2} \bar{x}$ where $\bar{x}$ is the mean of the squares of $h_\theta(x^{(i)})-y^{(i)})$ , or the difference between the predicted value and the actual value.
+
+This function is otherwise called the "Squared error function", or "Mean squared error". The mean is halved ($\frac{1}{2}$) as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the $\frac{1}{2}$ term.
+
+\section{Model and Cost Function}
+\label{sec:model_cost_function}
+\href{https://www.coursera.org/learn/machine-learning/supplement/nhzyF/cost-function}{Link: Model and Cost Function} \\
+We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x's and the actual output y's.
+$$J(\theta_0,\theta_1)=\dfrac{1}{2m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2$$
+
+\section{Batch Gradient Descent for Linear Regression One Variable}
+\label{sec:gr_desc_lin_regr_one_var}
+\href{https://www.coursera.org/learn/machine-learning/supplement/U90DX/gradient-descent-for-linear-regression}{Link: Gradient Descent for Linear Regression} \\
+When \textbf{specifically applied to the case of linear regression}, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothesis function and modify the equation to:
+
+$$Repeat\ until\ convergence:$$
+$$\theta_0:=\theta_0-\alpha\dfrac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x_0^{(i)}$$
+$$\theta_1:=\theta_1-\alpha\dfrac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x_1^{(i)}$$
+where $m$ is the size of the training set, $\theta_0$ a constant that will be changing \textbf{simultaneously} with $\theta_1$ and $x_i$, $y_i$ are values of the given training set (data). $h_\theta$ is the hypothesis, in this case Univariate Linear Regression - \autoref{sec:linear_regression_one_variable}. It is possible to omit $x_0^{(i)}$ as it is 1 in case of univariate linear regression. Note also that
+$$\dfrac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x_0^{(i)}=\dfrac{\partial}{\partial\theta_0}J(\theta_0,\theta_1)$$
+$$\dfrac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x_1^{(i)}=\dfrac{\partial}{\partial\theta_1}J(\theta_0,\theta_1)$$
+Where $J(\theta_0,\theta_1)$ is the Model and Cost Function in~\autoref{sec:model_cost_function}.
+\\\newline
+\noindent\textbf{Generalised algorithm}
+$$Repeat\ until\ convergence:$$
+$$\theta_j:=\theta_j-\alpha \dfrac{\partial}{\partial\theta_0}J(\theta_0,\theta_1)$$
+$$(for\ j = 1\ and\ j = 0)$$
+
+\section{Unclassified}
+\label{sec:Unclassified}
+
+\begin{description}
+  \item[Supervised Learning] \url{https://www.coursera.org/learn/machine-learning/lecture/1VkCb/supervised-learning}. \\
+  We give the algorithm data sets with right answers (Training set). Algorithm must produce more right answers.\\
+  Training set -> Learning Algorithm ->  outputs function h (hypothesis). Job of hypothesis is get the size of house as input and output estimated value.
+  h maps from x's to y's
+  \begin{description}
+    \item[Regression] House price prediction is regression problem - predict continuous valued output (price).
+    \item[Classification] Classification: Predict a discrete valued output (0 or 1). It can be more than two values. \\
+    Also contains a different way of plotting classification problems - different symbols on one axis instead of two axes.
+  \end{description}  
+  \item[Unsupervised Learning] \url{https://www.coursera.org/learn/machine-learning/lecture/olRZo/unsupervised-learning} \\
+  Given data with the same label. ``Here is a data set, find some structure in it''.
+  \begin{description}
+    \item[Clustering algorithm] E.g. breast cancer thing. Or google news e.g. clusters news related to specific news story. Genes issue - cluster people.
+    \item[Examples]: Organise computing clusters, social network analysis, Market segmentation, Astronomical data analysis. Cocktail party problem: Overlapping voices
+  \end{description}
+\end{description}
+
+
+\subsection{Model Representation}
+\label{sec:model_rep}
+\begin{description}
+  \item[Training set:] Data set with right answers
+\end{description}
+
+\subsection{Notation}
+\label{sec:notation}
+\begin{table}[h!]
+  \centering
+  \begin{tabularx}{\textwidth}{l|X}
+    $m$ & Number of training examples \\\hline
+    $x's$ & ``input'' variable / features \\\hline
+    $y's$ & ``output'' variable / ``target'' variable \\\hline
+    $(x,y)$ & one training example \\\hline
+    $(x^{(i)},y^{(i)}$ & i\textsuperscript{th} training example \\\hline
+    $h(hypothesis)$ & maps from $x's$ to $y's$ \\\hline
+    Linear Regression with one variable or \\ Univariate linear regression & $h_\theta(x)=\theta_0 + \theta_1x$ \\\hline
+    $\theta_0$,$\theta_1$ & Model Parameters \\\hline
+    Linear Regression Cost Function & \\\hline
+    Linear Regression\\Minimize Square Difference\\Minimise over $\theta_0 \theta_1$ & $$\dfrac{1}{2m}\sum_{i=1}^m((h_\theta(x^({i}))-y^{(i)})^2$$\\\hline
+    Cost function (Squared error cost function)\\ Minimise cost function over $\theta_0 \theta_1$ & $$J(\theta_0,\theta_1)=\dfrac{1}{2m}\sum_{i=1}^m((h_\theta(x^({i}))-y^{(i)})^2$$ \\\hline
+   Batch Gradient Descent & For minimising. It goes to a local minimum. Batch because it looks at the entire training set. \\\hline
+  $\alpha$ & Learning rate (Always positive)\\\hline 
+    Linear Regression & It is always a Convex function (Bowl-shaped) \\\hline
+  \end{tabularx}
+  \caption{Symbols}
+  \label{tab:symbols}
+\end{table}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
