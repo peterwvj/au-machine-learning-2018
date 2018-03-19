@@ -6,17 +6,17 @@ This repository contains information about the 2018 instance of the Aarhus Unive
 
 * Meeting dates
 
-| Session | Date                             | Remarks                                    | Room                           |
-|---------+----------------------------------+--------------------------------------------+--------------------------------|
-|       1 | Feb 1, 12:00 - 16:00 (Thursday)  |                                            | 5342-333 (Ada meeting room)    |
-|       2 | Feb 15, 12:00 - 16:00 (Thursday) | 2 weeks later                              | 5342-333 (Ada meeting room)    |
-|       3 | Mar 1, 12:00 - 16:00 (Thursday)  | 2 weeks later                              | 5342-333 (Ada meeting room)    |
-|       4 | Mar 15, 12:00 - 16:00 (Thursday) | 2 weeks later                              | 5125-110 (Edison meeting room) |
-|       5 | Apr 5, 12:00 - 16:00 (Thursday)  | 3 weeks later (Easter)                     | 5125-110 (Edison meeting room) |
-|       6 | Apr 19, 12:00 - 16:00 (Thursday) | 2 weeks later                              | 5342-333 (Ada meeting room)    |
-|       7 | May 3, 12:00 - 16:00 (Thursday)  | 2 weeks later                              | 5342-333 (Ada meeting room)    |
-|---------+----------------------------------+--------------------------------------------+--------------------------------|
-|       8 | May 9, 13:00 - 17:00 (Wednesday) | Second part of the workshop, 6 days later. | 5125-110 (Edison meeting room) |
+| Activity     | Date                             | Remarks                                      | Room                           |
+|--------------+----------------------------------+----------------------------------------------+--------------------------------|
+| Session 1    | Feb 1, 12:00 - 16:00 (Thursday)  |                                              | 5342-333 (Ada meeting room)    |
+| Session 2    | Feb 15, 12:00 - 16:00 (Thursday) | 2 weeks later                                | 5342-333 (Ada meeting room)    |
+| Session 3    | Mar 1, 12:00 - 16:00 (Thursday)  | 2 weeks later                                | 5342-333 (Ada meeting room)    |
+| Session 4    | Mar 15, 12:00 - 16:00 (Thursday) | 2 weeks later                                | 5125-110 (Edison meeting room) |
+| Session 5    | Apr 5, 12:00 - 16:00 (Thursday)  | 3 weeks later (Easter)                       | 5125-110 (Edison meeting room) |
+| Session 6    | Apr 19, 12:00 - 16:00 (Thursday) | 2 weeks later                                | 5342-333 (Ada meeting room)    |
+| Session 7    | May 3, 12:00 - 16:00 (Thursday)  | 2 weeks later                                | 5342-333 (Ada meeting room)    |
+| Session 8    | May 9, 13:00 - 17:00 (Wednesday) | *Second part of the workshop*, 6 days later. | 5125-110 (Edison meeting room) |
+| *Guest talk* | May 17, 13:00 - 15:00 (Thursday) | Guest talk by Simon Lauritsen from Enversion | TBA                            |
 
 * Compulsory programme
 
