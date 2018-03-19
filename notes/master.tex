@@ -1,10 +1,11 @@
 \documentclass[a4paper]{report}
 \usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{amsmath}
 \usepackage{tabularx}
 \usepackage{color}
 \begin{document}
+\tableofcontents
 \chapter{Session 1}
 \section{Matrix notes}
 \label{sec:matrix_notes}
@@ -74,7 +75,7 @@ $$(for\ j = 1\ and\ j = 0)$$
     \item[Regression] House price prediction is regression problem - predict continuous valued output (price).
     \item[Classification] Classification: Predict a discrete valued output (0 or 1). It can be more than two values. \\
     Also contains a different way of plotting classification problems - different symbols on one axis instead of two axes.
-  \end{description}  
+  \end{description}
   \item[Unsupervised Learning] \url{https://www.coursera.org/learn/machine-learning/lecture/olRZo/unsupervised-learning} \\
   Given data with the same label. ``Here is a data set, find some structure in it''.
   \begin{description}
@@ -107,12 +108,49 @@ $$(for\ j = 1\ and\ j = 0)$$
     Linear Regression\\Minimize Square Difference\\Minimise over $\theta_0 \theta_1$ & $$\dfrac{1}{2m}\sum_{i=1}^m((h_\theta(x^({i}))-y^{(i)})^2$$\\\hline
     Cost function (Squared error cost function)\\ Minimise cost function over $\theta_0 \theta_1$ & $$J(\theta_0,\theta_1)=\dfrac{1}{2m}\sum_{i=1}^m((h_\theta(x^({i}))-y^{(i)})^2$$ \\\hline
    Batch Gradient Descent & For minimising. It goes to a local minimum. Batch because it looks at the entire training set. \\\hline
-  $\alpha$ & Learning rate (Always positive)\\\hline 
+  $\alpha$ & Learning rate (Always positive)\\\hline
     Linear Regression & It is always a Convex function (Bowl-shaped) \\\hline
   \end{tabularx}
   \caption{Symbols}
   \label{tab:symbols}
 \end{table}
+
+
+\chapter{Error analysis}
+\section{Error Metrics for Skewed Classes}
+An example of skewed classes is when the ratio of positive to negative examples is very close to one of two extremes. In this case a simple fixed predictor of $y=0$ or $y=1$ might give a high accuracy/low error. In such cases we can use precision and recall, which are more robust error metrics.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|cc}
+Predicted class & Actual class &\\
+& 1 & 0\\
+\hline
+1 & true positive & false positive \\
+0 & false negative & true negative
+\end{tabular}
+\caption{Comparing predicted classes with actual classes.}
+\label{tab:precision}
+\end{table}
+
+\begin{equation}
+\text{Accuracy} = \frac{\text{true positives}+\text{true negatives}}{\text{\# samples}}
+\end{equation}
+
+\begin{equation}
+\text{Precision} = \frac{\text{true positives}}{\text{\# predicted positives}} = \frac{\text{true positives}}{\text{true positives}+\text{false positives}}
+\end{equation}
+
+\begin{equation}
+\text{Recall} = \frac{\text{true positives}}{\text{\# actual positives}} = \frac{\text{true positives}}{\text{true positives}+\text{false negatives}}
+\end{equation}
+The recall is zero for a constant predictor $y=0$. In cases with skewed classes it is not possible for simple constant classifiers like $y=0$ or $y=1$ to have both a high precision and recall. The usual convention is to set $y=1$ for the rare class.
+
+The F$_1$ score can be used to compare precision and recall in order to evaluate the trade off between high precision and high recall:
+\begin{equation}
+F_1 = \frac{2PR}{P+R},
+\end{equation}
+where $P$ is the precision and $R$ is the recall. If either $P$ or $R$ is zero the $F_1$ score is zero. Both $P$ and $R$ have to be one for the $F_1$ score to be one.
 
 \end{document}
 %%% Local Variables:
